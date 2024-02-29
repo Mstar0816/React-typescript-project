@@ -68,24 +68,28 @@ const usePagingState = (data: BookDate): PagingState => {
   useEffect(() => {
     let autoPagingTimer: NodeJS.Timeout;
     if (autoPaging) {
+      // autoPagingTimer = setInterval(() => {
+      //   toNextContent();
+      // }, AUTO_PAGING_SPEED1);
       autoPagingTimer = setInterval(() => {
         toNextContent();
-      }, AUTO_PAGING_SPEED1);
+        }, data.pages[pageCursor].contents[contentCursor].duration);
     }
     
-
     return () => clearInterval(autoPagingTimer);
   }, [autoPaging, contentCursor, pageCursor, data]);
 
   useEffect(() => {
     let autoPagingTimer: NodeJS.Timeout;
     if (autoPaging) {
+      // autoPagingTimer = setInterval(() => {
+      //   toNextPage();
+      // }, AUTO_PAGING_SPEED2);
       autoPagingTimer = setInterval(() => {
         toNextPage();
-      }, AUTO_PAGING_SPEED2);
+        }, 4000);
     }
     
-
     return () => clearInterval(autoPagingTimer);
   }, [autoPaging, contentCursor, pageCursor, data]);
 
