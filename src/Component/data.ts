@@ -18,7 +18,7 @@ export const mockData: BookDate = {
               y: 450,
             },
           },
-          duration: 20,
+          duration: 2000,
         },
         {
           type: 'PAUSE',
@@ -34,7 +34,7 @@ export const mockData: BookDate = {
               y: 350,
             },
           },
-          duration: 10,
+          duration: 2000,
         },
         {
           type: 'LINE',
@@ -45,7 +45,7 @@ export const mockData: BookDate = {
               y: 350,
             },
           },
-          duration: 10,
+          duration: 2000,
         },
         {
             type: 'LINE',
@@ -56,7 +56,7 @@ export const mockData: BookDate = {
                 y: 500,
               },
             },
-            duration: 10,
+            duration: 2000,
           },
         {
           type: 'PAUSE',
@@ -77,7 +77,7 @@ export const mockData: BookDate = {
               y: 450,
             },
           },
-          duration: 10,
+          duration: 2000,
         },
         {
           type: 'LINE',
@@ -88,7 +88,7 @@ export const mockData: BookDate = {
               y: 400,
             },
           },
-          duration: 10,
+          duration: 2000,
         },
         {
           type: 'LINE',
@@ -99,12 +99,12 @@ export const mockData: BookDate = {
               y: 650,
             },
           },
-          duration: 10,
+          duration: 2000,
         },
         {
           type: 'PAUSE',
           value: null,
-          duration: 10,
+          duration: 2000,
         },
       ],
     },
@@ -125,9 +125,9 @@ export const mockData: BookDate = {
         {
           type: 'PAUSE',
           value: null,
-          duration: 10,
+          duration: 2000,
         },
       ],
-    }
+    },
   ],
 };
